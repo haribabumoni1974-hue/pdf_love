@@ -1,0 +1,38 @@
+
+> new@0.1.0 dev
+> next dev
+
+▲ Next.js 16.3.4 (Turbopack)
+- Local:         http://localhost:54629
+- Network:       http://192.168.29.120:54629
+✓ Ready in 3.5s
+✓ Running next.config.ts took 212ms
+
+ GET / 200 in 2.3s (next.js: 972ms, application-code: 1279ms)
+ GET / 200 in 488ms (next.js: 28ms, application-code: 461ms)
+ GET / 200 in 637ms (next.js: 52ms, application-code: 585ms)
+○ Compiling /protect-pdf ...
+ GET /protect-pdf 200 in 5.3s (next.js: 4.3s, application-code: 927ms)
+ GET /protect-pdf 200 in 464ms (next.js: 169ms, application-code: 295ms)
+ GET / 200 in 532ms (next.js: 55ms, application-code: 477ms)
+ GET / 200 in 610ms (next.js: 59ms, application-code: 551ms)
+ GET / 200 in 967ms (next.js: 57ms, application-code: 910ms)
+ GET / 200 in 50ms (next.js: 21ms, application-code: 29ms)
+ GET / 200 in 190ms (next.js: 19ms, application-code: 171ms)
+ GET /merge-pdf 200 in 482ms (next.js: 189ms, application-code: 293ms)
+ GET / 200 in 571ms (next.js: 35ms, application-code: 536ms)
+ GET / 200 in 437ms (next.js: 26ms, application-code: 412ms)
+○ Compiling /split-pdf ...
+ GET /split-pdf 200 in 3.4s (next.js: 3.3s, application-code: 125ms)
+ GET /protect-pdf 200 in 206ms (next.js: 82ms, application-code: 123ms)
+○ Compiling /unlock-pdf ...
+ GET /unlock-pdf 200 in 4.1s (next.js: 4.0s, application-code: 135ms)
+ GET /unlock-pdf 200 in 488ms (next.js: 88ms, application-code: 400ms)
+ GET / 200 in 389ms (next.js: 37ms, application-code: 352ms)
+○ Compiling /compress-pdf ...
+ GET /compress-pdf 200 in 3.7s (next.js: 3.5s, application-code: 179ms)
+ GET / 200 in 924ms (next.js: 54ms, application-code: 870ms)
+ GET / 200 in 929ms (next.js: 36ms, application-code: 894ms)
+✓ Compiled in 1974ms
+ GET / 200 in 795ms (next.js: 90ms, application-code: 704ms)
+[?25h

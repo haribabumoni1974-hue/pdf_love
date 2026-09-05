@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+/* Class-based dark mode (`.dark` toggled on <html> by the theme provider). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #faf9f7;
+  --surface: #ffffff;
+  --surface-2: #f4f2ef;
+  --foreground: #221d1a;
+  --muted: #7d766c;
+  --border: #e7e3dc;
+  --accent: #6b48ff;
+  --accent-strong: #5a34f2;
+  --accent-soft: #efeaff;
+  --danger: #b3261e;
+  --danger-soft: #fdeceb;
+  --success: #15803d;
+  --success-soft: #e9f7ee;
+}
+
+.dark {
+  --background: #12101a;
+  --surface: #1a1724;
+  --surface-2: #221e30;
+  --foreground: #f3f1f7;
+  --muted: #a49daf;
+  --border: #2d2839;
+  --accent: #9d86ff;
+  --accent-strong: #7e5ef5;
+  --accent-soft: #262039;
+  --danger: #ff8a80;
+  --danger-soft: #3a1f24;
+  --success: #4ade80;
+  --success-soft: #17301f;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
+  --color-accent-soft: var(--accent-soft);
+  --color-danger: var(--danger);
+  --color-danger-soft: var(--danger-soft);
+  --color-success: var(--success);
+  --color-success-soft: var(--success-soft);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --radius-card: 1rem;
+  --shadow-card: 0 1px 2px rgb(28 22 20 / 0.04), 0 8px 24px -12px rgb(28 22 20 / 0.12);
+  --shadow-pop: 0 2px 4px rgb(28 22 20 / 0.05), 0 16px 40px -16px rgb(28 22 20 / 0.18);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+::selection {
+  background: var(--accent-soft);
+}
+
+/* Consistent, visible focus state for keyboard users. */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
